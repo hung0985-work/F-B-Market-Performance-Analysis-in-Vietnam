@@ -96,27 +96,9 @@ FNB-Market-Analysis/
 
 ## 6. Hướng dẫn đọc dự án
 
-Người đọc nên theo dõi dự án theo thứ tự sau:
-
-### Bước 1: Đọc `Report.pdf`
-
-File này cung cấp cái nhìn tổng quan về toàn bộ dự án, bao gồm bối cảnh phân tích, mục tiêu, phương pháp, kết quả chính và khuyến nghị. Đây là file nên đọc đầu tiên để nắm được logic tổng thể của dự án.
-
-### Bước 2: Xem `BAO_CAO_NGANH_FB_1_.pdf`
-
-File này trình bày báo cáo chi tiết về ngành F&B Việt Nam giai đoạn 2019–2023, bao gồm bối cảnh thị trường, tác động của COVID-19, mức độ phục hồi sau đại dịch và các insight chính về hiệu quả hoạt động của ngành.
-
-### Bước 3: Mở `Notebook Clean data.ipynb`
-
-Notebook này thể hiện quá trình xử lý dữ liệu ban đầu, bao gồm làm sạch dữ liệu, chuẩn hóa các trường thông tin tài chính và chuẩn bị dữ liệu cho các bước phân tích tiếp theo.
-
-### Bước 4: Mở `Notebook Phân tích thị trường.ipynb`
-
-Notebook này tập trung vào phân tích tổng quan thị trường F&B, xu hướng tăng trưởng trước COVID-19, tác động trong giai đoạn đại dịch và sự phục hồi của ngành sau COVID-19.
-
-### Bước 5: Mở `Notebook Phân tích tình hình kinh doanh.ipynb`
-
-Notebook này đi sâu vào hiệu quả hoạt động của doanh nghiệp theo quy mô, bao gồm khả năng sinh lời, thanh khoản, hiệu suất hoạt động, đòn bẩy tài chính, phân tích tương quan và hồi quy để xác định các yếu tố ảnh hưởng đến doanh thu thuần.
+- File Report chính gồm nội dung và phân tích ở Report.pdf
+- File BAO_CAO_NGANH_FB_1.pdf hỗ trợ cung cấp thông tin về ngành FB được sử dụng trong Report
+- Các file Notebook gồm code python được lưu dưới dạng ipynb nhằm tiện theo dõi logic và kết quả
 
 ## 7. Kết quả chính
 

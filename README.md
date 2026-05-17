@@ -73,37 +73,89 @@ Mô hình hồi quy được sử dụng để định lượng mức độ ản
 
 Đánh giá mức độ phục hồi sau COVID-19 dựa trên doanh thu, lợi nhuận, dòng tiền, khả năng thanh toán và rủi ro tài chính.
 
-## 5. Cấu trúc thư mục
-
-Cấu trúc repo đề xuất:
+## 5. Cấu trúc file dự án
 
 ```text
 FNB-Market-Analysis/
 │
-├── data/
-│   ├── raw/                      # Dữ liệu gốc
-│   ├── processed/                # Dữ liệu đã làm sạch và xử lý
-│   └── external/                 # Dữ liệu hoặc thông tin thị trường bổ sung
+├── BAO_CAO_NGANH_FB_1_.pdf
+│   └── Báo cáo tổng hợp về ngành F&B Việt Nam giai đoạn 2019–2023.
 │
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb    # Làm sạch và chuẩn hóa dữ liệu
-│   ├── 02_market_overview.ipynb  # Phân tích tổng quan thị trường
-│   ├── 03_financial_ratios.ipynb # Tính toán và phân tích chỉ số tài chính
-│   ├── 04_impact_drivers.ipynb   # Phân tích tương quan và hồi quy
-│   └── 05_recommendation.ipynb   # Tổng hợp insight và đề xuất
+├── Notebook Clean data.ipynb
+│   └── Notebook làm sạch, xử lý và chuẩn hóa dữ liệu tài chính doanh nghiệp.
 │
-├── reports/
-│   ├── FNB_Market_Analysis_Report.pdf
-│   └── presentation.pdf
+├── Notebook Phân tích thị trường.ipynb
+│   └── Notebook phân tích tổng quan thị trường F&B trước, trong và sau COVID-19.
 │
-├── visuals/
-│   ├── charts/                   # Biểu đồ phân tích
-│   └── figures/                  # Hình ảnh sử dụng trong báo cáo
+├── Notebook Phân tích tình hình kinh doanh.ipynb
+│   └── Notebook phân tích hiệu quả hoạt động, chỉ số tài chính, tương quan và hồi quy.
 │
-├── src/
-│   ├── data_preprocessing.py     # Hàm xử lý dữ liệu
-│   ├── financial_metrics.py      # Hàm tính chỉ số tài chính
-│   └── visualization.py          # Hàm vẽ biểu đồ
-│
-├── README.md
-└── requirements.txt
+└── Report.pdf
+    └── Báo cáo trình bày kết quả phân tích cuối cùng của dự án.
+```
+
+## 6. Hướng dẫn đọc dự án
+
+Người đọc nên theo dõi dự án theo thứ tự sau:
+
+### Bước 1: Đọc `Report.pdf`
+
+File này cung cấp cái nhìn tổng quan về toàn bộ dự án, bao gồm bối cảnh phân tích, mục tiêu, phương pháp, kết quả chính và khuyến nghị. Đây là file nên đọc đầu tiên để nắm được logic tổng thể của dự án.
+
+### Bước 2: Xem `BAO_CAO_NGANH_FB_1_.pdf`
+
+File này trình bày báo cáo chi tiết về ngành F&B Việt Nam giai đoạn 2019–2023, bao gồm bối cảnh thị trường, tác động của COVID-19, mức độ phục hồi sau đại dịch và các insight chính về hiệu quả hoạt động của ngành.
+
+### Bước 3: Mở `Notebook Clean data.ipynb`
+
+Notebook này thể hiện quá trình xử lý dữ liệu ban đầu, bao gồm làm sạch dữ liệu, chuẩn hóa các trường thông tin tài chính và chuẩn bị dữ liệu cho các bước phân tích tiếp theo.
+
+### Bước 4: Mở `Notebook Phân tích thị trường.ipynb`
+
+Notebook này tập trung vào phân tích tổng quan thị trường F&B, xu hướng tăng trưởng trước COVID-19, tác động trong giai đoạn đại dịch và sự phục hồi của ngành sau COVID-19.
+
+### Bước 5: Mở `Notebook Phân tích tình hình kinh doanh.ipynb`
+
+Notebook này đi sâu vào hiệu quả hoạt động của doanh nghiệp theo quy mô, bao gồm khả năng sinh lời, thanh khoản, hiệu suất hoạt động, đòn bẩy tài chính, phân tích tương quan và hồi quy để xác định các yếu tố ảnh hưởng đến doanh thu thuần.
+
+## 7. Kết quả chính
+
+Một số kết luận nổi bật từ dự án:
+
+- Trước COVID-19, ngành F&B Việt Nam tăng trưởng ổn định nhưng có dấu hiệu chậm lại do phụ thuộc nhiều vào mô hình kinh doanh truyền thống.
+- COVID-19 khiến doanh thu, lợi nhuận và dòng tiền của nhiều doanh nghiệp suy giảm mạnh, đặc biệt trong giai đoạn 2020–2021.
+- Sau COVID-19, ngành F&B phục hồi rõ rệt nhờ sự thích nghi với mô hình online, thanh toán số và tái cấu trúc hoạt động.
+- Nhóm doanh nghiệp lớn và vừa có khả năng phục hồi lợi nhuận tốt hơn, trong khi nhóm nhỏ và siêu nhỏ chịu áp lực lớn về vốn chủ sở hữu, khả năng thanh toán và đòn bẩy tài chính.
+- Giá vốn hàng bán là một trong những yếu tố có ảnh hưởng mạnh và nhất quán đến doanh thu thuần của doanh nghiệp F&B.
+- Quản trị chi phí, dòng tiền và tài sản ngắn hạn là các yếu tố quan trọng quyết định khả năng phục hồi sau đại dịch.
+
+## 8. Công cụ sử dụng
+
+Dự án sử dụng các công cụ và thư viện chính sau:
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Statsmodels
+- PowerPoint / Canva cho phần trình bày báo cáo
+
+## 9. Hạn chế của dự án
+
+Dự án vẫn có một số hạn chế:
+
+- Dữ liệu phụ thuộc vào chất lượng báo cáo tài chính của các doanh nghiệp.
+- Một số doanh nghiệp có thể thiếu dữ liệu ở một số năm.
+- Phân tích hồi quy chỉ phản ánh mối quan hệ thống kê, không khẳng định quan hệ nhân quả tuyệt đối.
+- Một số yếu tố phi tài chính như hành vi khách hàng, mức độ chuyển đổi số hoặc chiến lược thương hiệu chưa được lượng hóa đầy đủ.
+
+## 10. Định hướng phát triển tiếp theo
+
+Trong các phiên bản tiếp theo, dự án có thể được mở rộng theo các hướng:
+
+- Xây dựng mô hình chấm điểm mức độ phục hồi của từng doanh nghiệp.
+- Phân cụm doanh nghiệp theo hiệu quả tài chính và rủi ro hoạt động.
+- Kết hợp thêm dữ liệu thị trường, hành vi tiêu dùng và dữ liệu địa lý.
+- Xây dựng dashboard tương tác để theo dõi sức khỏe tài chính của doanh nghiệp F&B.
